@@ -1,0 +1,30 @@
+<main>
+  <section class="logo">
+    <app-login-logo-container></app-login-logo-container>
+  </section>
+
+  <section class="otpVerification">
+    <div class="content">
+      <h2>OTP Verification</h2>
+      <p>Enter the OTP send to email.</p>
+
+      <div class="otpButtonContainer">
+        <div class="otpContainer">
+          <input type="number"  required class="otp"/>
+          <input type="number"  required class="otp"/>
+          <input type="number"  required class="otp"/>
+          <input type="number"  required class="otp"/>
+        </div>
+        <p>00:120<span>Sec</span></p>
+        <button type="button">Submit</button>
+        <p class="resendOtp">
+          Don't receive code ? <a routerLink="/auth/signup">Re-send</a>
+        </p>
+      </div>
+
+      <p class="joinToday">
+        Dont have an account? <a routerLink="/auth/signup">Join free today</a>
+      </p>
+    </div>
+  </section>
+</main>

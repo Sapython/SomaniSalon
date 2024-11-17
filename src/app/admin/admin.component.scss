@@ -1,0 +1,13 @@
+section {
+  display: flex;
+  .sidebar {
+    width: 13%;
+    min-width: 13%;
+    height: 100vh;
+  }
+  .header {
+    width: 87%;
+    min-width: 86%;
+    height: 10%;
+  }
+}

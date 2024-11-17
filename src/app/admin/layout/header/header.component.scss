@@ -1,0 +1,38 @@
+section {
+  display: flex;
+  margin-left: 40px;
+  margin-right: 40px;
+  justify-content: space-between;
+  p {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .profile {
+    display: flex;
+    flex-direction: row;
+    width: 16%;
+    div {
+      margin-left: 5px;
+      align-items: center;
+    }
+    img {
+      width: 45px;
+      height: 45px;
+      border-radius: 100%;
+      margin-top: 15px;
+      margin-right: 5px;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 0px;
+    }
+    span {
+      margin: 0px;
+      padding: 0px;
+      font-size: 13px;
+      color: #61758A;
+      line-height: 13px;
+    }
+  }
+}

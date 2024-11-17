@@ -1,0 +1,47 @@
+<main>
+  <section class="logo">
+    <app-login-logo-container></app-login-logo-container>
+  </section>
+
+  <section class="login">
+    <div class="content">
+      <p>Welcome back</p>
+      <h2>Login to your account</h2>
+      <div class="form">
+        <form class="login-form" (ngSubmit)="login()">
+          <label for="email">Email</label>
+          <br />
+          <input
+            type="text"
+            placeholder="email"
+            required
+            (change)="setEmail($event)"
+          />
+          <br />
+          <label for="email">Password</label>
+          <br />
+          <input
+            type="password"
+            value=""
+            placeholder="*******"
+            required
+            (change)="setPassword($event)"
+          />
+        </form>
+        <div class="rememberAndForgotCont">
+          <div>
+            <input type="checkbox" name="rememberMe" value="rememberMe" />
+            <label for="rememeberMe">Remember me</label>
+          </div>
+          <a type="button">Forgot password?</a>
+        </div>
+        <button type="button" (click)="login()">Login now</button>
+        <br />
+        <button type="button" class="signWithGoogle" (click)="login()"><span>GoogleIcon</span>Or sign-in with google</button>
+        <p class="joinToday">
+          Dont have an account? <a routerLink="/auth/signup">Join free today</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
